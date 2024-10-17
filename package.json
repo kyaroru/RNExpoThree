@@ -5,8 +5,8 @@
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint"
@@ -17,14 +17,20 @@
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/native": "^6.0.2",
+    "base64-arraybuffer": "^1.0.2",
     "expo": "~51.0.28",
+    "expo-asset-utils": "^3.0.0",
     "expo-constants": "~16.0.2",
+    "expo-dev-client": "~4.0.28",
+    "expo-file-system": "^17.0.1",
     "expo-font": "~12.0.9",
+    "expo-gl": "^14.0.2",
     "expo-linking": "~6.3.1",
     "expo-router": "~3.5.23",
     "expo-splash-screen": "~0.27.5",
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.7",
+    "expo-three": "^8.0.0",
     "expo-web-browser": "~13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -33,13 +39,15 @@
     "react-native-reanimated": "~3.10.1",
     "react-native-safe-area-context": "4.10.5",
     "react-native-screens": "3.31.1",
-    "react-native-web": "~0.19.10"
+    "react-native-web": "~0.19.10",
+    "three": "^0.169.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/jest": "^29.5.12",
     "@types/react": "~18.2.45",
     "@types/react-test-renderer": "^18.0.7",
+    "@types/three": "^0.169.0",
     "jest": "^29.2.1",
     "jest-expo": "~51.0.3",
     "react-test-renderer": "18.2.0",

@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+# RNExpoThree
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Note: This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+Other that that, this is also a newer example of 3D rendering using
 
-1. Install dependencies
+- [React Native](https://reactnative.dev/)
+- [expo-three](https://github.com/expo/expo-three)
+- [three.js](https://threejs.org/docs/)
 
-   ```bash
-   npm install
-   ```
+Old version with Bare React Native is at [RNExpoThreeOld](https://github.com/kyaroru/RNExpoThreeOld)
 
-2. Start the app
+## Clone
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+git clone https://github.com/kyaroru/RNExpoThree
+cd RNExpoThree
+yarn install
+npx expo prebuild --clean
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Note: using npx expo prebuild ensure you're always having clean `android` and `ios` folder
 
-## Learn more
+## Start
 
-To learn more about developing your project with Expo, look at the following resources:
+### Note: it only works in Physical iPhone & Physical Android devices
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Automatic Way (always fails to build on first attempt)
 
-## Join the community
+```
+yarn ios
+or
+yarn android
+```
 
-Join our community of developers creating universal apps.
+Manual way (my preferred method)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+Run yarn start & then install using Android Studio or Xcode
+```
+
+## Android APK
+
+[Download APK](https://drive.google.com/file/d/1z_fxXSXMcV8uCidUWFYeZkzKCTvN7D9u/view?usp=sharing)
+
+## Demo
+
+- Demo is laggy because it is in `.gif`, in actual device it would be much smoother 😉
+
+### iOS
+
+- Tested on Actual iPhone 15 in Release mode
+  ![iOS Demo](expo-three-ios.gif)
+
+### Android
+
+- Tested on Actual Google Pixel 5 with release apk
+  ![Android Demo](expo-three-android.gif)
+
+Have fun & wishing all newbies (like me) found happiness in programming! :p
+
+## Credits
+
+- [Shiba](https://sketchfab.com/3d-models/shiba-faef9fe5ace445e7b2989d1c1ece361c) Model from [zixisun02](https://sketchfab.com/dogerlo) @ [Sketchfab](https://sketchfab.com/)
+- [Ice Bear](https://sketchfab.com/3d-models/ice-bear-we-bare-bears-77f6d43d4dc740dfb8a500743676a18c) Model from [nissato](https://sketchfab.com/Nissato) @ [Sketchfab](https://sketchfab.com/)
+- [Hamburger](https://github.com/BonnierNews/react-native-3d-model-view/tree/master/example/obj) Model from [react-native-3d-model-view](https://github.com/BonnierNews/react-native-3d-model-view)
